@@ -93,10 +93,6 @@ void RSA::encrypt(std::string fileInPath, std::string fileOutPath, ul pP, ul pQ)
 	//std::ofstream encryptDataOutStream(fileOutPath);
 
 	std::vector<char> instr( (std::istreambuf_iterator<char>(encryptDataInStream)) , std::istreambuf_iterator<char>() );
-	//std::vector<char> outstr((std::ostreambuf_iterator<char>(encryptDataOutStream)), std::ostreambuf_iterator<char>(char));;
-	
-	//==Calculating Numers==//
-
 
 	//==Vectors for saving the cypher==//
 	double strSize = instr.size();
